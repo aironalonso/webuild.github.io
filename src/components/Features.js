@@ -6,10 +6,11 @@ import { Box } from '@mui/system';
 import { collapseData } from './collapseData';
 import CollapseFunc from './CollapseFunc';
 
+
 const Features = () => {
   
   return (
-    <Box maxHeight={800}>
+    <Box>
       <Grid container>
         <Grid item xs={12} md={12}>
           <Typography component='h3' gutterBottom variant='h3' sx={{
@@ -25,9 +26,7 @@ const Features = () => {
         {collapseData.map((element, index)=>(
          <CollapseFunc title={element.title} key={index} content={element.content} image={element.image}/>
         ))} 
-        {/* <CollapseFunc title="why us" content="Versatile in nature, SEO Optimized"/> */}
-        
-      </Grid>
+      </Grid>      
     </Box>
   );
 };

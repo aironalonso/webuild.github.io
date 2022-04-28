@@ -8,6 +8,8 @@ import Grid from '@mui/material/Grid';
 import { Button, Card, CardMedia, Container, CssBaseline, styled } from '@mui/material';
 import React from 'react';
 import Typography from '@mui/material/Typography';
+import './features.css';
+
 
 
 
@@ -26,18 +28,18 @@ const CollapseFunc =(props)=>{
     
         const handleExpandClick = () => {
         setExpanded(!expanded);
-    
         };
+
+        
     return (
         <Grid item xs={12} md={6}>
-          <Typography component='h5' gutterBottom variant='h5'>
+          <Typography component='h5' gutterBottom variant='h5' className='title' padding={2}>
             {props.title}
             <ExpandMore
               expand={expanded}
               onClick={handleExpandClick}
               aria-expanded={expanded}
               aria-label="show more"
-              id="why"
             >
               <ExpandMoreIcon />
             </ExpandMore>
@@ -46,7 +48,10 @@ const CollapseFunc =(props)=>{
             <Typography component='p' gutterBottom variant='p'>
               {props.content}
             </Typography>
-            <img src={props.image}/>
+            {props.image.map((photo,index)=>{
+              return <img  className='gallery' key={index} src={photo}/>                 
+            })}
+
           </Collapse>
         </Grid>
     )

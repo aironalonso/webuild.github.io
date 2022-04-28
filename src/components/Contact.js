@@ -2,12 +2,14 @@ import { Box } from '@mui/material';
 import React from 'react';
 import { useRef, useState } from 'react';
 import Grid from '@mui/material/Grid';
+import { Typography } from '@mui/material';
+import { Stack } from '@mui/material';
 
 const contactInfo = (localStorage.getItem("ContactDetails")) ? JSON.parse(localStorage.getItem("ContactDetails")) : []
 
 const Contact = () => {
 
-  const [contactList,setContactList] = useState(contactInfo)
+  const [contactList, setContactList] = useState(contactInfo)
   const fNameRef = useRef()
   const lNameRef = useRef()
   const emailRef = useRef()
@@ -26,42 +28,58 @@ const Contact = () => {
       email: emailRef.current.value,
       message: messageRef.current.value,
     }
-    
+
     setContactList([...contactList, contactObject])
     localStorage.setItem("ContactDetails", JSON.stringify(contactList))
     console.log(contactList)
-    fNameRef.current.value = "" ;
-    lNameRef.current.value = "" ;
-    emailRef.current.value = "" ;
-    messageRef.current.value = "" ;
+    fNameRef.current.value = "";
+    lNameRef.current.value = "";
+    emailRef.current.value = "";
+    messageRef.current.value = "";
   }
 
   return (
-    <Box sx={{ height: 625 , maxWidth: 250 }}>
-      <Grid>
-        <h4>Contact Form</h4>
-        <form onSubmit={onFormSubmit} >
-          <Grid item textAlign={"right"}>
-            <label>First Name</label>
-            <input type="text" name='firstName' ref={fNameRef} />
-          </Grid>
-          <Grid item textAlign={"right"}>
-            <label>Last Name</label>
-            <input type="text" name='lastName' ref={lNameRef} />
-          </Grid>
-          <Grid item textAlign={"right"}>
-            <label>Email</label>
-            <input type="text" name='email' ref={emailRef} />
-          </Grid>        
-          <Grid item textAlign={"left"}>
-            <label>Message:</label>
-            <textarea name="message" cols="30" rows="10" ref={messageRef} ></textarea>
-          </Grid>          
-          <Grid item textAlign={"right"}>
-            <input type="submit" value='submit' name="submit" />
-          </Grid>          
-        </form>
+    <Box>
+      <Stack direction="row">
+      <Grid container alignContent="center" justifyContent="center"  sx={{
+            backgroundColor: "#6bd3ff",
+            
+          }}>
+       
+          <Typography>
+            Feel free to contact us for more details.
+          </Typography>
+        
       </Grid>
+      <Grid container sx={{ maxWidth: 250 }} marginRight={2} padding={1}>
+          <Grid> 
+          <Typography variant="h5" component="h5">
+            Contact Form
+          </Typography>
+          <form onSubmit={onFormSubmit} >
+            <Grid item textAlign={"right"}>
+              <label>First Name</label>
+              <input type="text" name='firstName' ref={fNameRef} />
+            </Grid>
+            <Grid item textAlign={"right"}>
+              <label>Last Name</label>
+              <input type="text" name='lastName' ref={lNameRef} />
+            </Grid>
+            <Grid item textAlign={"right"}>
+              <label>Email</label>
+              <input type="text" name='email' ref={emailRef} />
+            </Grid>
+            <Grid item textAlign={"left"}>
+              <label>Message:</label>
+              <textarea name="message" cols="30" rows="10" ref={messageRef} ></textarea>
+            </Grid>
+            <Grid item textAlign={"right"}>
+              <input type="submit" value='submit' name="submit" />
+            </Grid>
+          </form>
+          </Grid>
+      </Grid>
+      </Stack>
     </Box>
   )
 }

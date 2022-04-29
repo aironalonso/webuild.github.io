@@ -1,0 +1,73 @@
+.about-section {
+    background: url(../../img/pic8.jpg) no-repeat left;
+    background-size: 55%;
+    background-color: white;
+    overflow: hidden;
+    margin-top: 50px;
+    padding: 100px 0;
+    padding-bottom: 100px;
+    height: 100vh;
+}
+
+.inner {
+    width: 55%;
+    float: right;
+    background-color: whitesmoke;
+    padding: 150px;
+}
+
+.inner h1 {
+    margin-bottom: 30px;
+    font-size: 50px;
+    color: rgba(31, 4, 82, 0.8);
+    font-family: 'raleway';
+    font-weight: 900;
+    text-align: center;
+}
+
+.inner h3 i {
+    color: rgba(8, 1, 22, 0.8);
+    font-family: 'raleway', sans-serif;
+    font-size: 20px;
+}
+
+.inner p {
+    font-family: 'raleway', sans-serif;
+    font-size: 20px;
+}
+
+.text {
+    font-size: 13px;
+    color: black;
+    line-height: 30px;
+    text-align: justify;
+    margin-bottom: 40px;
+}
+
+
+@media screen and (max-width:1200px) {
+    .inner {
+        padding: 80px;
+    }
+}
+
+@media screen and (max-width:1000px) {
+    .about-section {
+        background-size: 100%;
+        padding: 100px 40px;
+    }
+
+    .inner {
+        width: 100%;
+    }
+}
+
+@media screen and (max-width:600px) {
+    .about-section {
+        padding: 0;
+    }
+
+    .inner {
+        padding: 60px;
+    }
+}

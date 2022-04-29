@@ -6,14 +6,14 @@ import IconButton from '@mui/material/IconButton';
 import Typography from '@mui/material/Typography';
 import Menu from '@mui/material/Menu';
 import MenuIcon from '@mui/icons-material/Menu';
-import Container from '@mui/material/Container';
-import Avatar from '@mui/material/Avatar';
 import Button from '@mui/material/Button';
-import Tooltip from '@mui/material/Tooltip';
 import MenuItem from '@mui/material/MenuItem';
+import { Link } from '@mui/material';
 
 const pages = ['Features', 'About', 'Services', 'Developers', 'Contact Us'];
 const settings = ['Profile', 'Account', 'Dashboard', 'Logout'];
+
+const preventDefault = (event) => event.preventDefault();
 
 const NavBar = () => {
     const [anchorElNav, setAnchorElNav] = React.useState(null);
@@ -35,7 +35,7 @@ const NavBar = () => {
     };
 
     return (
-        <AppBar elevation={0} position="sticky" sx={{ bgcolor: '#3c055e', px: {xs: 0, md: 4, xl: 90} }}>
+        <AppBar elevation={0} position="sticky" sx={{ bgcolor: '#3c055e', px: { xs: 0, md: 4, xl: 90 } }}>
             <Toolbar disableGutters>
                 <Typography
                     variant="h6"
@@ -43,7 +43,7 @@ const NavBar = () => {
                     component="div"
                     sx={{ mr: 2, display: { xs: 'none', md: 'flex' } }}
                 >
-                    WEBUILD
+                    <Link color='inherit' component='button' href='#' target='_blank' rel='noreferrer' underline='none' variant='body1' onClick={preventDefault} sx={{ fontSize: 24, fontWeight: 600 }}>WEBUILD</Link>
                 </Typography>
 
                 <Box sx={{ flexGrow: 1, display: { xs: 'flex', md: 'none' } }}>
@@ -88,7 +88,7 @@ const NavBar = () => {
                     component="div"
                     sx={{ flexGrow: 1, display: { xs: 'flex', md: 'none' } }}
                 >
-                    WEBUILD
+                    <Link color='inherit' component='button' href='#' target='_blank' rel='noreferrer' underline='none' variant='body1' onClick={preventDefault} sx={{ fontSize: 24, fontWeight: 600 }}>WEBUILD</Link>
                 </Typography>
                 <Box sx={{ flexGrow: 1, display: { xs: 'none', md: 'flex' } }}>
                     {pages.map((page) => (

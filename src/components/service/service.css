@@ -1,0 +1,238 @@
+.wrapper {
+    font-family: 'raleway', sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background: #fafafa;
+}
+
+.wrapper h1 {
+    font-size: 3em;
+    margin: 25px 0;
+    text-align: center;
+    font-weight: 600;
+    color: rgba(38, 9, 92, 0.8)
+}
+
+.wrapper p {
+
+    color: rgb(24, 24, 71);
+}
+
+.content-box {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    width: 1000px;
+    margin-top: 30px;
+}
+
+.card {
+    min-height: 220px;
+    width: 320px;
+    padding: 30px;
+    border-radius: 5px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background: #fff;
+    margin: 10px 4px;
+    box-shadow: 0px 15px 25px rgba(0, 0, 0, 0.2);
+    transition: 0.5s;
+}
+
+.card i {
+    margin: 20px;
+    color: blueviolet;
+}
+
+.card h2 {
+    margin-bottom: 12px;
+    font-weight: 400;
+    text-align: center;
+}
+
+.card p {
+    color: black;
+    text-align: center;
+}
+
+
+.card:hover i,
+.card:hover p {
+    color: white;
+}
+
+.card:hover h2 {
+    font-weight: 500;
+    color: white;
+}
+
+.card:nth-child(1):hover {
+    background: linear-gradient(45deg,
+            rgba(38, 9, 92, 0.8) 0%,
+            rgba(132, 76, 196, 0.7) 100%),
+        url('../../img/pic4.jpg');
+    background-size: cover;
+
+}
+
+.card:nth-child(2):hover {
+    background: linear-gradient(45deg,
+            rgba(38, 9, 92, 0.8) 0%,
+            rgba(132, 76, 196, 0.7) 100%),
+        url('../../img/pic1.jpg');
+    background-size: cover;
+}
+
+.card:nth-child(3):hover {
+    background: linear-gradient(45deg,
+            rgba(38, 9, 92, 0.8) 0%,
+            rgba(132, 76, 196, 0.7) 100%),
+        url('../../img/pic2.jpg');
+    background-size: cover;
+}
+
+.card:nth-child(4):hover {
+    background: linear-gradient(45deg,
+            rgba(38, 9, 92, 0.8) 0%,
+            rgba(132, 76, 196, 0.7) 100%),
+        url('../../img/pic3.jpg');
+    background-size: cover;
+}
+
+.card:nth-child(5):hover {
+    background: linear-gradient(45deg,
+            rgba(38, 9, 92, 0.8) 0%,
+            rgba(132, 76, 196, 0.7) 100%),
+        url('../../img/pic6.jpg');
+    background-size: cover;
+}
+
+.card:nth-child(6):hover {
+    background: linear-gradient(45deg,
+            rgba(38, 9, 92, 0.8) 0%,
+            rgba(132, 76, 196, 0.7) 100%),
+        url('../../img/pic8.jpg');
+    background-size: cover;
+}
+
+/* Responsiveness */
+
+@media(max-width: 991px) {
+    .wrapper {
+        padding: 25px;
+    }
+
+    .wrapperh1 {
+        font-size: 2.5em;
+        font-weight: 600;
+    }
+
+    .content-box {
+        flex-direction: column;
+        width: 100%;
+    }
+
+    .card {
+        min-width: 300px;
+        margin: 10px auto;
+    }
+}
+
+.course .heading {
+    font-size: 50px;
+    margin: 25px 0;
+    text-align: center;
+    font-weight: 600;
+    color: rgba(31, 4, 82, 0.8);
+    font-family: 'raleway', sans-serif;
+}
+
+.course .box-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.course .box-container .box {
+    width: 40em;
+    border: 10px solid rgba(31, 4, 82, 0.8);
+    position: relative;
+    margin: 10px;
+}
+
+.course .box-container .box img {
+    height: 20rem;
+    width: 100%;
+    object-fit: cover;
+
+}
+
+.course .box-container .box .content {
+    padding: 1rem;
+
+}
+
+.course .box-container .box .content .stars i {
+    color: rgba(31, 4, 82, 0.8);
+    font-size: 1.7rem;
+    padding: 1rem .1rem;
+}
+
+.course .box-container .box .content .title {
+    color: black;
+    font-size: 35px;
+    text-decoration: none;
+    font-family: 'raleway', sans-serif;
+}
+
+.course .box-container .box .content .title:hover {
+    text-decoration: underline;
+}
+
+.course .box-container .box .content p {
+    padding: 1rem 0;
+    color: black;
+    font-size: 20px;
+    font-family: 'raleway', sans-serif;
+}
+
+.course .box-container .box .content .info {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-top: .5rem;
+    border-top: .5px solid black;
+    border-bottom: .5px solid black;
+    font-family: 'raleway', sans-serif;
+}
+
+.course .box-container .box .content .info h3 {
+    font-size: 20px;
+    padding: 10px;
+    color: black;
+    font-family: 'raleway', sans-serif;
+}
+
+.course .box-container .box .content .info h3 i {
+    color: rgba(31, 4, 82, 0.8);
+}
+
+.course .box-container .box .price {
+    position: absolute;
+    top: 16rem;
+    right: 1rem;
+    height: 8rem;
+    width: 8rem;
+    line-height: 8rem;
+    text-align: center;
+    border-radius: 100%;
+    background: white;
+    color: rgba(31, 4, 82, 0.8);
+    font-size: 3rem;
+    font-family: 'raleway', sans-serif;
+}

@@ -2,10 +2,14 @@ import { Avatar, Button, Card, CardMedia, Container, Stack, styled, } from '@mui
 import { Box } from '@mui/system';
 import React from 'react';
 import Typography from '@mui/material/Typography';
+import "./intro.css";
 
 const Intro = () => {
     return (
-        <Box sx={{ backgroundColor: '#3c055e', height: 556 }}>
+        <Box sx={{
+            backgroundColor: '#3c055e',
+            height: 556
+        }}>
             <Container>
                 <Stack direction='row' sx={{
                     display: 'flex',
@@ -16,13 +20,13 @@ const Intro = () => {
                     {/* Left side */}
                     <Stack direction='column' sx={{
                         borderLeft: '12px solid purple',
-                        mt: {xs: 6, md: 0},
-                        pl: {xs: 2, md: 8},
-                        width: {xs: '100%', md: '50%'}
+                        mt: { xs: 6, md: 0 },
+                        pl: { xs: 2, md: 8 },
+                        width: { xs: '100%', md: '50%' }
                     }}>
-                        <Typography component='h3' gutterBottom  variant='h3' sx={{
+                        <Typography component='h3' gutterBottom variant='h3' sx={{
                             color: '#fff',
-                            fontSize: {xs: 44, md: 70},
+                            fontSize: { xs: 44, md: 70 },
                             fontWeight: 'bolder',
                         }}>
                             Web Development Services
@@ -31,7 +35,7 @@ const Intro = () => {
                             color: '#fff',
                             fontWeight: 'lighter',
                             pl: 2,
-                            width: {xs: '100%', md: '60%'}
+                            width: { xs: '100%', md: '60%' }
                         }}>
                             {/* Content here */}
                             We are currently working hard on something
@@ -41,7 +45,7 @@ const Intro = () => {
                         <Button color='success' variant='contained' sx={{
                             borderRadius: 20,
                             mt: 1,
-                            width: {xs: '100%', md: '30%'}
+                            width: { xs: '100%', md: '30%' }
                         }}>
                             Read more
                         </Button>

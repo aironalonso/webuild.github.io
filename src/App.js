@@ -3,7 +3,7 @@ import React from 'react';
 import About from './components/about/About';
 import Contact from './components/Contact';
 import Developers from './components/Developers';
-import Features from './components/Features';
+import Features from './components/features/Features';
 import Footer from './components/Footer';
 import Intro from './components/Intro';
 import NavBar from './components/NavBar';

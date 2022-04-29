@@ -1,0 +1,31 @@
+/* .collapse-el {
+    align-items: center;
+    display: flex;
+    justify-content: center;
+} */
+
+.gallery {
+    height: 90px;
+    max-width: 90px;
+    width: 90px;
+}
+.gallery:hover {
+    transform: scale(1.4);
+    /* transform: translate(0px, -20px); */
+} 
+.collapse-title {
+    align-items: center;
+    background-color: #5E43C5;
+    border-radius: 20px;
+    color: #fff;
+    font-family: 'roboto',sans-serif;
+    font-weight: 500;
+    width: 100%;
+    text-align: center;
+}
+
+@media screen and (max-width: 480px) {
+    .title {
+        padding-left: 12px;
+    }
+}

@@ -38,9 +38,13 @@ const Intro = () => {
                             width: { xs: '100%', md: '60%' }
                         }}>
                             {/* Content here */}
-                            We are currently working hard on something
+                            Start your Coding Experience with us!
                             <br />
-                            We'll be here anytime, so message us !
+                            Learn now and build later!
+                            
+                            {/* We are currently working hard on something
+                            <br />
+                            We'll be here anytime, so message us ! */}
                         </Typography>
                         <Button color='success' variant='contained' sx={{
                             borderRadius: 20,

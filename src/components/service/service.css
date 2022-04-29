@@ -136,10 +136,8 @@
     }
 
     .card {
-        margin: 10px 0px;
+        margin: 10px auto;
         min-width: 300px;
-        padding: 30px 0px;
-        width: 160px;
     }
 }
 
@@ -163,7 +161,7 @@
     width: 40em;
     border: 10px solid rgba(31, 4, 82, 0.8);
     position: relative;
-    margin: 10px 0px;
+    margin: 10px;
 }
 
 .course .box-container .box img {
@@ -174,7 +172,7 @@
 }
 
 .course .box-container .box .content {
-    padding: 1rem 0px;
+    padding: 1rem;
 
 }
 

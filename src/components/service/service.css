@@ -16,7 +16,6 @@
 }
 
 .wrapper p {
-
     color: rgb(24, 24, 71);
 }
 
@@ -137,8 +136,10 @@
     }
 
     .card {
+        margin: 10px 0px;
         min-width: 300px;
-        margin: 10px auto;
+        padding: 30px 0px;
+        width: 160px;
     }
 }
 

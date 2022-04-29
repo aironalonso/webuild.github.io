@@ -10,7 +10,7 @@ export const collapseData = [
         image:["./images/bootstrap.jpg","./images/css.png","./images/html.png","./images/reactjs.png","./images/js.png"],
     },
     {
-        title:"Recently Developed",
+        title:"Students Works",
         content:"",
         image:["./images/Screenshot1.png","./images/Screenshot2.png","./images/Screenshot3.png","./images/loraine.jpg","./images/calc.png",],
     }

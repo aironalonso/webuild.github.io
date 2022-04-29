@@ -40,20 +40,23 @@ const Contact = () => {
 
   return (
     <Box>
-      <Stack direction="row">
+      <Stack direction="row" sx={{
+        display:"flex",
+        flexDirection:{xs:"column",sm:"row"}
+      }}>
       <Grid container alignContent="center" justifyContent="center"  sx={{
-            backgroundColor: "#6bd3ff",
-            
+            backgroundColor: "bisque",
+            minHeight:40
           }}>
        
-          <Typography>
+          <Typography variant="h5" component="h5">
             Feel free to contact us for more details.
           </Typography>
         
       </Grid>
-      <Grid container sx={{ maxWidth: 250 }} marginRight={2} padding={1}>
+      <Grid container sx={{ maxWidth: 300 }} marginRight={2} padding={1}>
           <Grid> 
-          <Typography variant="h5" component="h5">
+          <Typography variant="h4" component="h4">
             Contact Form
           </Typography>
           <form onSubmit={onFormSubmit} >

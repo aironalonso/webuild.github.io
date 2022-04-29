@@ -7,9 +7,7 @@ const About = () => {
       <div class="inner">
         <h1>Who are we?</h1>
         <p class="text">
-          Established in 2022, WeBuild is a company formed by three web developer collegues. We shared the same
-          goal and that is to make IT Education readily
-          available nationwide and to help aspiring developers.
+        WEBUILD is an outsourcing site built for those who thrives to learn Computer Programming. To provide secure, better user expirience and an interface easily understood by users.
         </p>
         <h3>
           <i>

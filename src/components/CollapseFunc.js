@@ -33,7 +33,7 @@ const CollapseFunc =(props)=>{
         
     return (
         <Grid item xs={12} md={6}>
-          <Typography component='h5' gutterBottom variant='h5' className='title' padding={2}>
+          <Typography component='h4' gutterBottom variant='h4' className='title' padding={2}>
             {props.title}
             <ExpandMore
               expand={expanded}
@@ -45,7 +45,7 @@ const CollapseFunc =(props)=>{
             </ExpandMore>
           </Typography>
           <Collapse in={expanded} timeout="auto" unmountOnExit>
-            <Typography component='p' gutterBottom variant='p'>
+            <Typography component='h5' gutterBottom variant='h5'>
               {props.content}
             </Typography>
             {props.image.map((photo,index)=>{

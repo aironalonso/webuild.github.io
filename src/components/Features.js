@@ -13,8 +13,8 @@ const Features = () => {
     <Box>
       <Grid container>
         <Grid item xs={12} md={12}>
-          <Typography component='h3' gutterBottom variant='h3' sx={{
-            color: '#610000',
+          <Typography component='h2' gutterBottom variant='h2' sx={{
+            color: '#6d1cd6',
             fontWeight: 'bolder',
             marginTop: 8,
             textAlign: 'center',

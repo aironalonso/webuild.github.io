@@ -31,7 +31,7 @@ const Developers = () => {
           }}>
             Loraine Ostan
           </Typography>
-          <Link href='#' target='_blank' rel='noreferrer'>
+          <Link href='https://loraine282.github.io/Portfolio/myprofile.html?fbclid=IwAR0l23t1uY4VnlZDn9Xn-C6rubD8GcKNb_A2up2bn9QRXzyugRVpcv4AFp8' target='_blank' rel='noreferrer'>
             <Avatar
               alt='Loraine Ostan'
               src='/images/IMG_20220426_222725.jpg'
@@ -55,12 +55,12 @@ const Developers = () => {
               <Typography component='div' gutterBottom sx={{ fontWeight: 'bolder' }}>
                 WEB DEVELOPER
               </Typography>
-              <Typography component='div' variant='p' sx={{ fontSize: 16, fontWeight: 500 }}>
+              <Typography component='div' variant='p' sx={{ fontSize: 16, fontWeight: 200 }}>
                 Front-end web developer based in Muntinlupa. I love web designing and building websites.
               </Typography>
             </CardContent>
           </Card>
-          <Link href='#' target='_blank' rel='noreferrer' underline='none' variant='body1' sx={{ fontWeight: 600 }}>PORTFOLIO</Link>
+          <Link href='https://loraine282.github.io/Portfolio/myprofile.html?fbclid=IwAR0l23t1uY4VnlZDn9Xn-C6rubD8GcKNb_A2up2bn9QRXzyugRVpcv4AFp8' target='_blank' rel='noreferrer' underline='none' variant='body1' sx={{ fontWeight: 600 }}>PORTFOLIO</Link>
         </Stack>
 
         {/* Dev-Kiel */}
@@ -94,7 +94,7 @@ const Developers = () => {
               <Typography component='div' gutterBottom sx={{ fontWeight: 'bolder', textAlign: 'center' }}>
                 WEB DEVELOPER
               </Typography>
-              <Typography component='div' variant='p' sx={{ fontSize: 16, fontWeight: 500 }}>
+              <Typography component='div' variant='p' sx={{ fontSize: 16, fontWeight: 200 }}>
                 Front-end developer based in Taguig. I am passionate about programming language and how to apply it in the real world.
               </Typography>
             </CardContent>
@@ -133,7 +133,7 @@ const Developers = () => {
               <Typography component='div' gutterBottom sx={{ fontWeight: 'bolder', textAlign: 'center' }}>
                 WEB DEVELOPER
               </Typography>
-              <Typography component='div' variant='p' sx={{ fontSize: 16, fontWeight: 500 }}>
+              <Typography component='div' variant='p' sx={{ fontSize: 16, fontWeight: 200 }}>
                 Front-End Developer based on Malolos, Bulacan. To be a programmer is an exciting part in my life.
               </Typography>
               <Typography component='div' variant='p'></Typography>

@@ -6,7 +6,7 @@ import Developers from './components/Developers';
 import Features from './components/features/Features';
 import Footer from './components/Footer';
 import Intro from './components/Intro';
-import NavBar from './components/NavBar';
+import NavBar from './components/navbar/NavBar';
 import Service from './components/service/Service';
 
 const App = () => {

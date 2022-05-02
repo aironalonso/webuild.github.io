@@ -9,6 +9,7 @@ import MenuIcon from '@mui/icons-material/Menu';
 import Button from '@mui/material/Button';
 import MenuItem from '@mui/material/MenuItem';
 import { Link } from '@mui/material';
+import "./navbar.css";
 
 const pages = ['Features', 'About', 'Services', 'Developers', 'Contact Us'];
 const settings = ['Profile', 'Account', 'Dashboard', 'Logout'];
@@ -35,7 +36,7 @@ const NavBar = () => {
     };
 
     return (
-        <AppBar elevation={0} position="sticky" sx={{ bgcolor: '#3c055e', px: { xs: 0, md: 4, xl: 90 } }}>
+        <AppBar className='nav' elevation={0} position="sticky" sx={{ bgcolor: '#3c055e', px: { xs: 0, md: 4, xl: 90 } }}>
             <Toolbar disableGutters>
                 <Typography
                     variant="h6"

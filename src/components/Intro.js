@@ -17,7 +17,7 @@ const Intro = () => {
     return (
         <Box sx={{
             backgroundColor: '#3c055e',
-            height: '100vh'
+            height: { xs: '100%', md: '100%' }
         }}>
             <Stack direction={{ xs: 'column', md: 'row' }} sx={{
                 display: 'flex',
@@ -26,6 +26,7 @@ const Intro = () => {
             }}>
                 {/* Left side */}
                 <Stack direction='column' sx={{
+                    alignItems: { xs: 'center', md: 'flex-start' },
                     borderLeft: '12px solid purple',
                     flex: 1,
                     gap: 6,
@@ -73,8 +74,8 @@ const Intro = () => {
 
                     <ColorButton variant='contained' sx={{
                         borderRadius: 20,
-                        mt: 1,
-                        width: { xs: '90%', md: '30%' }
+                        my: {xs: 2, md: 1},
+                        width: { xs: '80%', md: '30%' }
                     }}>Read more</ColorButton>
                 </Stack>
 

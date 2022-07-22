@@ -12,7 +12,7 @@ import { Link } from '@mui/material';
 import "./navbar.css";
 
 const pages = ['Features', 'About', 'Services', 'Developers', 'Contact Us'];
-const settings = ['Profile', 'Account', 'Dashboard', 'Logout'];
+// const settings = ['Profile', 'Account', 'Dashboard', 'Logout'];
 
 const preventDefault = (event) => event.preventDefault();
 

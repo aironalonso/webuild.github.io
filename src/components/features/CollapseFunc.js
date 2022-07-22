@@ -3,9 +3,7 @@ import IconButton from '@mui/material/IconButton';
 // import FavoriteIcon from '@mui/icons-material/Favorite';
 // import ShareIcon from '@mui/icons-material/Share';
 import ExpandMoreIcon from '@mui/icons-material/ExpandMore';
-import MoreVertIcon from '@mui/icons-material/MoreVert';
-import Grid from '@mui/material/Grid';
-import { Button, Card, CardMedia, Container, CssBaseline, Stack, styled } from '@mui/material';
+import { Stack, styled } from '@mui/material';
 import React from 'react';
 import Typography from '@mui/material/Typography';
 import './features.css';
@@ -58,7 +56,7 @@ const CollapseFunc = (props) => {
               {props.content}
             </Typography>
             {props.image.map((photo, index) => {
-              return <img className='gallery' key={index} src={photo} />
+              return <img alt='photo' className='gallery' key={index} src={photo} />
             })}
           </Collapse>
         </Stack>

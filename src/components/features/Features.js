@@ -1,7 +1,7 @@
 import React from 'react';
 import Grid from '@mui/material/Grid';
 import Typography from '@mui/material/Typography';
-import { Button, Card, CardMedia, Container, CssBaseline, Stack, styled } from '@mui/material';
+import { Stack } from '@mui/material';
 import { Box } from '@mui/system';
 import { collapseData } from './collapseData';
 import CollapseFunc from './CollapseFunc';

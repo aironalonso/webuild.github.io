@@ -1,7 +1,7 @@
-import { Avatar, Box, Button, Card, CardActions, CardContent, Link, Stack, Typography } from '@mui/material';
+import { Avatar, Box, Card, CardContent, Link, Stack, Typography } from '@mui/material';
 import React from 'react';
 
-const preventDefault = (event) => event.preventDefault();
+// const preventDefault = (event) => event.preventDefault();
 
 const Developers = () => {
   return (

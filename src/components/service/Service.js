@@ -58,7 +58,7 @@ const Service = () => {
         <div className='box-container'>
 
           <div class="box">
-            <img src={Pic1} alt="photo" />
+            <img src={Pic1} alt="random" />
             <h3 class="price">$5</h3>
             <div class="content">
               <div class="stars">
@@ -86,7 +86,7 @@ const Service = () => {
           </div>
 
           <div class="box">
-            <img src={Pic2} alt="photo" />
+            <img src={Pic2} alt="random" />
             <h3 class="price">$10</h3>
             <div class="content">
               <div class="stars">
@@ -115,7 +115,7 @@ const Service = () => {
           </div>
 
           <div class="box">
-            <img src={Pic3} alt="photo" />
+            <img src={Pic3} alt="random" />
             <h3 class="price">$5</h3>
             <div class="content">
               <div class="stars">
@@ -145,7 +145,7 @@ const Service = () => {
           </div>
 
           <div class="box">
-            <img src={Pic4} alt="" />
+            <img src={Pic4} alt="random" />
             <h3 class="price">$15</h3>
             <div class="content">
               <div class="stars">

@@ -56,7 +56,7 @@ const CollapseFunc = (props) => {
               {props.content}
             </Typography>
             {props.image.map((photo, index) => {
-              return <img alt='photo' className='gallery' key={index} src={photo} />
+              return <img alt='gallery' className='gallery' key={index} src={photo} />
             })}
           </Collapse>
         </Stack>
